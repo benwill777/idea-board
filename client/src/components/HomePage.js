@@ -6,7 +6,7 @@ class HomePage
     render() {
         return (
             <div>
-                <Link to='/login'> <button>Login Here</button></Link>
+                Home Page
             </div>
         );
     }

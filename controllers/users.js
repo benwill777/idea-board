@@ -10,4 +10,11 @@ router.get('/', (req, res) => {
         .catch((err) => console.log(err))
 })
 
+router.post('/', (req, res) => {
+    User.create(req.body.user)
+        .then((data) => {
+            res.json(data)
+        })
+
+})
 module.exports = router;
